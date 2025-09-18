@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+</head>
+<style>
+    .contain {
+        display: flex;
+        height: 150px;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .box {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 2px solid black;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    button {
+        cursor: pointer;
+        height: 25px;
+        width: 150px;
+        border: none;
+        border-radius: 5px;
+        background-color: blue;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="contain">
+        <div class="rock box">
+            <img src="rock-paper-scissors-circle-11562962494dqcjusyikw.png" alt="rock">
+        </div>
+        <div class="paper box">
+            <img src="paper.png" alt="paper">
+        </div>
+        <div class="scissor box">
+            <img src="scissors.png" alt="scissor">
+        </div>
+    </div>
+
+    <p class="hidden"></p>
+    <p class="end">Wins:0 , Loses:0 , Ties:0</p>
+
+    <button class="but">Reset</button>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
