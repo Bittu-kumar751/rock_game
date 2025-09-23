@@ -37,6 +37,31 @@
         border-radius: 5px;
         background-color: blue;
         text-align: center;
+        color: white;
+    }
+    button a{
+        color: white;
+        text-decoration: none;
+    }
+    .btn{
+        display: flex;
+        /* justify-content: space-evenly; */
+        height: 50px;
+    }
+    @media (max-width:480px){
+        .btn{
+            display: flex;
+            flex-direction: column;
+            /* margin-top: 10px; */
+        }
+        .contain{
+            flex-direction: column;
+            height: 400px;
+            width: 150px;
+        }
+        .btn .btton{
+            margin-top: 5px;
+        }
     }
 </style>
 
@@ -55,12 +80,12 @@
 
     <p class="hidden"></p>
     <p class="end">Wins:0 , Loses:0 , Ties:0</p>
+    <div class="btn">
+    <div class="btton"><button class="but">Reset</button></div>
 
-    <button class="but">Reset</button>
-
-    <button><a href="web.html">my website</a></button>
-    <button><a href="cal.html">calculator</a></button>
-
+    <div class="btton"><button><a href="web.html">my website</a></button></div>
+    <div class="btton"><button><a href="cal.html">calculator</a></button></div>
+    </div>
     <script src="game.js"></script>
 </body>
 
